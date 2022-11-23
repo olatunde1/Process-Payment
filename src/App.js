@@ -1,5 +1,6 @@
 import "./index.css";
-import { Button } from "./components/ButtonStyle";
+import { Button} from "./components/ButtonStyle";
+import {TextStyle} from './components/TextStyle'
 
 import { useState } from "react";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
@@ -33,6 +34,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
+        <TextStyle>Flutterwave Payment Processing</TextStyle>
         <input
           type="number"
           placeholder="Amount:"
